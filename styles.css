@@ -1,0 +1,567 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Global Styles */
+
+html {
+    font-size: 62.5%;
+    max-width: 100%;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+nav,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    position: relative;
+}
+
+/* Header Styles */
+
+.fa.fa-bars {
+    display: none;
+}
+
+.nav-container {
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.nav-links,
+.footer-nav-links {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links a,
+.footer-nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#4A455C;
+    float: left;
+    padding: 5px 15px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover,
+.footer-nav-links a:hover {
+    color: #E75605;
+}
+
+.header-container {
+    position: relative;
+}
+
+header img {
+    float: left;
+    width: 50%;
+}
+
+h1 {
+    float: left;
+    font-size: 146.4px;
+    line-height: 120px;
+    color: #E75605;
+    text-transform: capitalize;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 200px;
+}
+.nav-links li,
+.footer-nav-links li {
+    display: inline-block;
+}
+
+.icons {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+.icons a {
+    display: block;
+    padding: 5px 0;
+    color: #E75605;
+}
+
+/* Section 1 Styles */
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    color: #E75605;
+}
+
+.section1-container {
+    height: 900px;
+}
+
+.info1,
+.info2,
+.image1,
+.image2 {
+    width: 50%;
+    height: 450px;
+}
+
+.info1 p,
+.info2 p,
+.info3 p {
+    padding: 20px 0;
+}
+
+.info1 a,
+.info2 a,
+.info3 a,
+button {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: 2px solid #E75605;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.info1,
+.info2 {
+    padding: 90px;
+}
+
+.info1 {
+    float: left;
+    
+}
+
+.image1 {
+    float: right;
+}
+
+.image2 {
+    float: left;
+}
+
+.info2 {
+    float: right;
+}
+
+/* Section 2 Styles */
+
+.section2-container {
+    background-color: lightgray;
+    position: relative;
+}
+
+.image3 {
+    width: 30%;
+    float: left;
+    padding: 100px 0 100px 100px;
+}
+
+.info3 {
+    width: 70%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    padding-left: 50px;
+}
+
+/* Section 3 Styles */
+
+.section3-container {
+    height: auto;
+    background-color: #E75605;
+    position: relative;
+    padding: 100px 0;
+}
+
+.section3-items {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section3-items li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.section3-list a {
+    padding: 50px 0;
+    display: inline;
+    text-decoration: none;
+}
+
+.section3-items i {
+    color: #FFFFFF;
+}
+
+.section3-items p {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Food Gallery Styles */
+
+.food-gallery-container {
+    padding-bottom: 75px;
+}
+
+.food-gallery-container h2 {
+    text-align: center;
+    padding: 75px 0;
+}
+
+.food-gallery-images li {
+    width: calc((100% / 3) - 40px);
+    float: left;
+    margin: 0 20px;
+}
+
+/* Footer Styles */
+
+.contact-container,
+.form-container {
+    padding: 50px;
+}
+
+.contact-container {
+    float: left;
+}
+
+.contact-container h2,
+.form-container h2 {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    float: right;
+}
+
+.email-field input {
+    width: 100%;
+}
+
+.email-field button {
+    float: right;
+}
+
+.footer-container {
+    background-color: lightgray;
+}
+
+.footer {
+    background-color: #1F2022;
+    clear: both;
+}
+
+.footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer p::before {
+    content: "\00a9";
+}
+
+/* First Breakpoint */
+
+@media (max-width: 1243px) {
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .info3 p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Second Breakpoint */
+
+@media (max-width: 1055px) {
+
+    .icons {
+        top: 350px;
+        right: 200px;
+    }
+
+    .icons a {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .info1 p,
+    .info2 p,
+    .info3 p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Third Breakpoint */
+
+@media (max-width: 960px) {
+
+    h1 {
+        font-size: 10rem;
+        bottom: 100px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .fa.fa-bars {
+        font-size: 4rem;
+        display: block;
+        float: right;
+        clear: both;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .image3,
+    .info3 {
+        float: none;
+        height: 50%;
+        padding: 0;
+    }
+
+    .image3 {
+        padding-top: 25px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .info3 {
+        position: initial;
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* Fourth Breakpoint */
+
+@media (max-width: 880px) {
+
+    .info1,
+    .info2 {
+        padding: 50px;
+    }
+
+    .contact-container,
+    .form-container,
+    .email-field button {
+        float: none;
+        text-align: center;
+    }
+
+    .contact-container,
+    .form-container {
+        padding: 25px;
+    }
+
+    .email-field button {
+        width: 100%;
+    }
+}
+
+/* Fifth Breakpoint */
+
+@media (max-width: 767px) {
+
+    .nav-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .header-container {
+        margin-bottom: 0;
+    }
+
+    .header-container img {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    h1 {
+        float: none;
+        font-size: 6.5rem;
+        right: 50px;
+        top: 0;
+        line-height: 65px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .fa.fa-bars {
+        display: block;
+        float: right;
+        clear: both;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .section1-container {
+        height: auto;
+    }
+
+    .info1,
+    .info2,
+    .info3,
+    .image1,
+    .image2,
+    .image3 {
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+
+    .info1,
+    .info2,
+    .info3 {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .info3 {
+        position: initial;
+    }
+
+    .section3-items {
+        position: initial;
+    }
+
+    .section3-items span {
+        display: block;
+    }
+
+    .food-gallery-images li {
+        width: calc((100% / 2) - 40px)
+    }
+
+    .image6 {
+        display: none;
+    }
+
+    .contact-container,
+    .form-container,
+    .email-field button {
+        float: none;
+        text-align: center;
+    }
+
+    .contact-container,
+    .form-container {
+        padding: 25px;
+    }
+
+    .email-field button {
+        width: 100%;
+    }
+    
+
+    .footer-nav-links a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Sixth Breakpoint */
+
+@media (max-width: 650px) {
+
+    .fa.fa-bars {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 45px;
+    }
+
+    .info1,
+    .info2,
+    .info3 {
+        padding: 25px;
+    }
+
+    .section3-items li {
+        display: block;
+        padding: 20px 0;
+    }
+}
+
+/* Seventh Breakpoint */
+
+@media (max-width: 360px) {
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 40px;
+    }
+
+    .footer-nav-links a {
+        padding: 0 10px;
+    }
+}
