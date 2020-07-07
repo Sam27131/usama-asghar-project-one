@@ -78,7 +78,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color:#4A455C;
-    float: left;
     padding: 5px 15px;
     transition: all 0.3s;
 }
@@ -305,11 +304,11 @@ button {
     text-align: center;
 }
 
-.footer p::before {
-    content: "\00a9";
+.footer a {
+    color: #E75605;
 }
 
-/* First Breakpoint */
+/* First Breakpoint: Font too big in some areas */
 
 @media (max-width: 1243px) {
 
@@ -322,7 +321,7 @@ button {
     }
 }
 
-/* Second Breakpoint */
+/* Second Breakpoint: Changing locations of icons and reducing font-size */
 
 @media (max-width: 1055px) {
 
@@ -343,7 +342,7 @@ button {
     }
 }
 
-/* Third Breakpoint */
+/* Third Breakpoint: Reducing font-sizes, changing icons location, introducing hamburger menu and stacking containers in section 3 */
 
 @media (max-width: 960px) {
 
@@ -357,7 +356,15 @@ button {
     }
 
     .icons {
-        display: none;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 200px;
+    }
+
+    .icons a {
+        display: block;
+        padding: 0 5px;
     }
 
     .fa.fa-bars {
@@ -392,7 +399,7 @@ button {
     }
 }
 
-/* Fourth Breakpoint */
+/* Fourth Breakpoint: Reduced paaing in info containers and stacking contact and form containers */
 
 @media (max-width: 880px) {
 
@@ -418,14 +425,9 @@ button {
     }
 }
 
-/* Fifth Breakpoint */
+/* Fifth Breakpoint: Stacking containers in section 1, removing icons in header, removing image 6 in food gallery and changing other general stylings */
 
 @media (max-width: 767px) {
-
-    .nav-container {
-        padding: 0;
-        width: 100%;
-    }
 
     .header-container {
         margin-bottom: 0;
@@ -450,16 +452,6 @@ button {
 
     h2 {
         font-size: 3.5rem;
-    }
-
-    .fa.fa-bars {
-        display: block;
-        float: right;
-        clear: both;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .section1-container {
@@ -493,10 +485,6 @@ button {
         position: initial;
     }
 
-    .section3-items span {
-        display: block;
-    }
-
     .food-gallery-images li {
         width: calc((100% / 2) - 40px)
     }
@@ -527,7 +515,7 @@ button {
     }
 }
 
-/* Sixth Breakpoint */
+/* Sixth Breakpoint: Reducing font-sizes and paddings and stacking list items in section 3 */
 
 @media (max-width: 650px) {
 
@@ -552,7 +540,7 @@ button {
     }
 }
 
-/* Seventh Breakpoint */
+/* Seventh Breakpoint: Reducing font-size and padding */
 
 @media (max-width: 360px) {
 
